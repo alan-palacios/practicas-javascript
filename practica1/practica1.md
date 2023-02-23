@@ -2,6 +2,8 @@
 
 Implementar un piano funcional usando html, css y javascript que reproduzca el sonido de la tecla correspondiente al presionarla. El piano debe tener las siguientes características:
 
+## Requerimientos
+
 * Interfaz gráfica del piano con las teclas correspondientes a las notas musicales Do, Re, Mi, Fa, Sol, La, Si, Do.
 * Al dar click a una tecla, debe reproducirse el sonido de la nota musical correspondiente. Puedes usar los archivos de audio que se encuentran en la carpeta `audios`.
 * Al presionar una tecla, debe cambiar de color para indicar que está siendo presionada.

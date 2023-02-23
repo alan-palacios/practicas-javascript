@@ -1,15 +1,10 @@
-# Práctica 2 - Juego de memoria
+# Práctica 3 - Pixel Art
 
-Crea un juego de memoria que muestre una cuadrícula de tarjetas boca abajo, y permite al usuario voltearlas para encontrar las parejas. Una vez que se encuentran todas las parejas, el juego termina.
+En esta práctica, deberás crear un tablero de pixel art donde los usuarios puedan pintar cada uno de los cuadros con una paleta de colores predefinida. El tablero debe tener un tamaño mínimo de 8x8, pero se debe poder establecer cualquier dimensión. Deberás implementar las siguientes funcionalidades:
 
 ## Requerimientos
 
-* Interfaz gráfica del juego que muestre una cuadrícula de 4x4 de tarjetas boca abajo.
-* Cargar imágenes o iconos diferentes para cada pareja de tarjetas. (8)
-* Lógica del juego que permita crear parejas de tarjetas de manera aleatoria para cada juego nuevo.
-* Interacción con las tarjetas para que se volteen al hacer clic en ellas.
-* Si dos tarjetas volteadas son iguales que permanezcan boca arriba. De lo contrario que se vuelvan a poner boca abajo.
-* Si se han encontrado todas las parejas de tarjetas, mostrar un mensaje de felicitación y permitir al usuario volver a jugar.
-* Agregar un contador para el número máximo de jugadas. Si el usuario llega a ese número, mostrar un mensaje de derrota y permitir al usuario volver a jugar.
-* Opcional: animaciones y efectos de sonido cada que el jugador voltee una tarjeta.
-* Opcional: agregar un contador de tiempo que sustituya al contador de jugadas.
+* Paleta de colores: La paleta de colores debe tener al menos 3 colores predefinidos para elegir, pero se puede agregar la cantidad que gustes. Los usuarios deben poder seleccionar un color de la paleta para pintar los cuadros del tablero.
+* Pintado de cuadros: Los usuarios deben poder pintar cada uno de los cuadros del tablero con el color seleccionado de la paleta.
+* Borrado del tablero: Los usuarios deben poder borrar todo el tablero o bien dejarlo en blanco en cualquier momento. El borrado también puede ser realizado uno por uno.
+* Generación de tablero: Los usuarios deben poder generar un tablero con una dimensión nueva. Al generar un nuevo tablero, se deben borrar todos los cuadros del tablero anterior y establecer la nueva dimensión seleccionada por el usuario.
