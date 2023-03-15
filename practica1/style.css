@@ -1,0 +1,203 @@
+/*
+  CSS Reset
+  http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: sans-serif;
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+  border-spacing: 0;
+}
+/* CSS variables */
+:root {
+	--primary-color: #458de0;
+	--primary-color-hover: #2d6cb0;
+	--record-color: #e04545;
+	--play-color: #65b862;
+	--background-color: #161616;
+	--text-color: #fafafa;
+	--key-background-color: #fffaee;
+	--key-background-color-hover: #d4d0c3;
+	--key-border-color: #a1967c;
+	--key-text-color: #161616;
+}
+
+/* Util classes */
+.text-center{
+	text-align: center;
+}
+.w-full{
+	width: 100%;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/* dark mode */
+.container {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+
+button {
+	background-color: var(--primary-color);
+	color: var(--text-color);
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font: inherit;
+	font-size: 1.2rem;
+	transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: var(--primary-color-hover);
+	transition: background-color 0.2s ease-in-out;
+}
+
+button:active {
+	transform: scale(0.95);
+	transition: transform 0.2s ease-in-out;
+}
+
+button.record {
+	width: 2rem;
+	height: 2rem;
+	padding: 0rem;
+	border-radius: 100%;
+	background-color: var(--record-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+}
+
+button.record:disabled {
+	opacity: 0.5;
+}
+button.record.active {
+	filter: brightness(1.2);
+}
+
+button.play {
+	width: 2rem;
+	height: 2rem;
+	padding: 0rem;
+	border-radius: 100%;
+	background-color: var(--play-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+}
+
+button.play:disabled {
+	opacity: 0.5;
+}
+button.play.active {
+	filter: brightness(1.2);
+	opacity: 1;
+}
+
+/* piano */
+
+#piano {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.key {
+	background-color: var(--key-background-color);
+	color: var(--key-text-color);
+	transition: background-color 0.2s ease-in-out;
+	display: flex;
+	justify-items: end;
+	align-items: end;
+	text-align: center;
+	border-right: solid var(--key-border-color) 7px;
+	border-bottom: solid var(--key-border-color) 4px;
+	padding: 10px 20px;
+	margin: 0rem;
+	border-radius: 5px;
+	font: inherit;
+	font-size: 1rem;
+	font-weight: bold;
+	width: 2rem;
+	height: 10rem;
+}
+.key:hover {
+	background-color: var(--key-background-color-hover);
+	transition: background-color 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.key:active {
+	transform: scale(0.95);
+	transition: transform 0.2s ease-in-out;
+}
+
+.key.active {
+	transform: scale(0.95);
+	background-color: var(--key-background-color-hover);
+	transition: transform 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.key-name {
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+}
