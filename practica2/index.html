@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 - Juego de Memoria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Práctica 2 - Juego de Memoria</h1>
+      <h2 id="message" class="hidden">
+        Felicidades, has ganado!
+      </h2>
+      <div class="row">
+        <button onclick="generateMemoryGame()" class=" button" id="play">
+          Reiniciar Juego
+        </button>
+        <h3 id="plays">
+        </h3>
+        <h3 id="pairs">
+        </h3>
+      </div>
+      <div id="game" />
+    </div>
+  </body>
+  <script src="game.js"></script>
+</html>
