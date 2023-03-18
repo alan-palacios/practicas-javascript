@@ -1,5 +1,7 @@
 # Práctica 1 - Piano
 
+![screenshot](screenshot.png)
+
 Implementar un piano funcional usando html, css y javascript que reproduzca el sonido de la tecla correspondiente al presionarla. El piano debe tener las siguientes características:
 
 ## Requerimientos

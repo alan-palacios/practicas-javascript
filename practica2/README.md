@@ -1,5 +1,7 @@
 # Práctica 2 - Juego de memoria
 
+![screenshot](screenshot.png)
+
 Crea un juego de memoria que muestre una cuadrícula de tarjetas boca abajo, y permite al usuario voltearlas para encontrar las parejas. Una vez que se encuentran todas las parejas, el juego termina.
 
 ## Requerimientos
