@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3 - Pixel Art</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Práctica 3 - Pixel Art</h1>
+      <div class="col">
+        <div class="row">
+          <button onclick="generateBoard()" class=" button" id="generate">
+            Generar Tablero de 8x8
+          </button>
+        </div>
+        <div class="row">
+          <span>Tamaño (max. 30):</span>
+          <input type="text" id="size" pattern="\d" title="Only digits" />
+        </div>
+        <div class="row">
+          <label for="random">Mostrar Bordes</label>
+          <input type="checkbox" id="show-borders" />
+        </div>
+      </div>
+      <div id="board" ></div>
+      <div class="scroller">
+        <div id="color-options"></div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
